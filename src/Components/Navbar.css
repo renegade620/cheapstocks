@@ -1,0 +1,27 @@
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 1870px;
+    padding: 20px 10%;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.h1{
+    font-size: 50px;
+    color:wheat;
+}
+.h1 span{
+    font-size: 30px;
+    color:wheat;
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
