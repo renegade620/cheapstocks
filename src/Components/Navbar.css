@@ -24,4 +24,10 @@
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
+    cursor: pointer;
+}
+.cart{
+    height: 35px;
+    margin-left: 10px;
+    position: absolute;
 }
