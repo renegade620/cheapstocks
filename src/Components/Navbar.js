@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -10,10 +11,11 @@ const Navbar = () => {
             <a href='#'>About</a>
             <a href='#'> Sellers</a>
             <a href='#'>Contact Us</a>
-            <a href='#'>Add to Cart<img className='cart' src='/images/local_mall_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png' alt='Add to Cart' /></a>
+            
+            <Link to="/cart" >Add to Cart<img className='cart' src='/images/local_mall_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png' alt='Add to Cart' /></Link>
         </nav>
     </header>
   )
 }
 
-export default Navbar
+export default Navbar;

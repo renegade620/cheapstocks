@@ -1,7 +1,8 @@
 import React from 'react'
-import Gamingpage from './Components/Gamingpage';
+import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
+import Cart from './Components/Cart';
 
 const routes = [
     {
@@ -12,9 +13,13 @@ const routes = [
     {
       path: "/Gaming",
       element: <Gamingpage />,
-      errorElement: <ErrorPage />
-      
+      errorElement: <ErrorPage /> 
     }, 
+    {
+      path:"cart",
+      element:<Cart/>,
+      errorElement:<ErrorPage/>
+    }
     
   ];
 
