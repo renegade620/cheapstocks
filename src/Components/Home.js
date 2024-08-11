@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from './Navbar'
-import { BrowserRouter,Link } from "react-router-dom";
+import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
+import './Home.css'
 
 
 function Home() {
@@ -9,11 +10,12 @@ function Home() {
     <div >
       <Navbar/>
        </div>
-      <div>
-        
-      <Link to='/Gamingpage'><img src='/images/gaming.jpg' alt=''/><h2>Gaming</h2></Link>
+       
       
-      </div>
+       
+        <Link className='link' to='/Gaming'><img className='gamingpage' src='/images/gaming.jpg' alt=''/></Link> 
+        
+     
       
       </>
       

@@ -4,7 +4,7 @@ import './Gamingpage.css'
 const Gamingpage = () => {
   return (
     <div>
-        hello!
+        <h2>Hello</h2>
     </div>
   )
 }
