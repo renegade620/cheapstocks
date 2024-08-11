@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './Components/Home';
 import reportWebVitals from './reportWebVitals';
 import routes from './routes'
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 
-<RouterProvider>
+/*<RouterProvider>
   <Home/>
-</RouterProvider>
+</RouterProvider>*/
 
 const router = createBrowserRouter(routes);
 const root = ReactDOM.createRoot(document.getElementById("root"));
