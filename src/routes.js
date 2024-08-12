@@ -3,7 +3,7 @@ import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import Cart from './Components/Cart';
-import Kitchen from './Components/Kitchen';
+import Kitchen from './pages/Kitchen';
 
 const routes = [
     {
