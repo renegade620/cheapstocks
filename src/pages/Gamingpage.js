@@ -9,7 +9,7 @@ const Gamingpage = () => {
     <div>
         
     </div>
-    <div>Hello</div>
+    <div>I am Quincy</div>
     </>
   )
   
