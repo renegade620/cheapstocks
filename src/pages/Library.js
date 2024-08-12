@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
 
-function  Library() {
+import Navbar from "../Components/Navbar";
+
+function Library() {
   return (
-    <div> Library</div>
-  )
+    <>
+      <div>
+        <Navbar />
+      </div>
+    </>
+  );
 }
 
-export default  Library;
+export default Library;
