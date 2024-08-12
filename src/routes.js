@@ -23,8 +23,7 @@ const routes = [
     },
     {
       path:"/kitchen",
-      element:<
-        Kitchen/>,
+      element:<Kitchen/>,
       errorElement:<ErrorPage/>
     },
     
