@@ -16,11 +16,11 @@ function Kitchen() {
           </section>
           <section className="kitchen-cabinets">
             <h2>Cabinets</h2>
-            {/*pans */}
+            {/*microwave */}
           </section>
           <section className="kitchen-countertops">
             <h2>Countertops</h2>
-            {/* laminate */}
+            {/* blender */}
           </section>
         </div>
       </div>
