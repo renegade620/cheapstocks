@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
+import { PRODUCTS } from './kitchenproducts';
 
 function Kitchen() {
   return (
