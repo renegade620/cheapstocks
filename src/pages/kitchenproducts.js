@@ -2,9 +2,9 @@ import React from 'react';
 
 const products = [
   {
-    name: 'Toaster',
+    name: 'fridge',
     price: '$29.99',
-    imageUrl: 'https://example.com/toaster.jpg'
+    imageUrl: 'https://tvguru.co.ke/wp-content/uploads/2022/07/Samsung-Side-by-Side-635-Litres-Refrigerator-RS64R5311B4.webp'
   },
   {
     name: 'Microwave',
@@ -18,7 +18,7 @@ const products = [
   }
 ];
 
-function Product() {
+function KitchenProducts() {
   return (
     <div className="products">
       {products.map((product, index) => (
@@ -32,4 +32,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default KitchenProducts;

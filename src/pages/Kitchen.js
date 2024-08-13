@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
-import { PRODUCTS } from './kitchenproducts';
+import KitchenProducts, { PRODUCTS } from './kitchenproducts';
 
 function Kitchen() {
   return (
@@ -13,6 +13,7 @@ function Kitchen() {
           <section className="kitchen-appliances">
             <h2>Appliances</h2>
             {/* toaster */}
+            <KitchenProducts />
           </section>
           <section className="kitchen-cabinets">
             <h2>Cabinets</h2>
