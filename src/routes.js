@@ -1,10 +1,14 @@
 import React from 'react'
+
 import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import Cart from './Components/Cart';
 
-const routes = [
+
+
+  const routes = [
+   
     {
         path: "/",
         element: <Home />,
@@ -16,11 +20,16 @@ const routes = [
       errorElement: <ErrorPage /> 
     }, 
     {
-      path:"cart",
+      path:"/cart",
       element:<Cart/>,
       errorElement:<ErrorPage/>
     }
     
+    
   ];
+export default routes;
 
-export default routes
+  
+
+
+
