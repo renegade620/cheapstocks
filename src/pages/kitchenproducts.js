@@ -9,12 +9,12 @@ const products = [
   {
     name: 'Microwave',
     price: '$89.99',
-    imageUrl: 'https://example.com/microwave.jpg'
+    imageUrl: 'https://tvguru.co.ke/wp-content/uploads/2024/07/H20MOWS3-03-500-45.png'
   },
   {
-    name: 'Blender',
+    name: 'cooker',
     price: '$49.99',
-    imageUrl: 'https://example.com/blender.jpg'
+    imageUrl: 'https://www.urbanappliances.co.ke/wp-content/uploads/2024/04/Urban-Appliances-964329.jpg'
   }
 ];
 
