@@ -21,3 +21,4 @@ const {id,productName,Price,productImage}=props.data
     </>
   )
 }
+

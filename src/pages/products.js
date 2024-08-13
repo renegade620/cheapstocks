@@ -48,4 +48,8 @@ import product7 from '../assets/images/product7.jpg';
             Price:2500,
             productImage:product7,
         },
+<<<<<<< HEAD
     ]
+=======
+    ]
+>>>>>>> quincy-branch
