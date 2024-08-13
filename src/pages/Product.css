@@ -1,6 +1,8 @@
 .page{
     
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .product{
     border: 1px solid #ddd;
@@ -18,4 +20,20 @@
 .product:hover{
     width: 42%;
     height: 42%;
+}
+.Add{
+    border: none;
+    background-color: rgb(26, 100, 26);
+    color: #fff;
+    font-weight: 800;
+    width: 5%;
+    border-radius: 50px;
+    height: 26px;
+}
+.Add:hover{
+    background-color: #fff;
+    color: black;
+}
+.description{
+    padding-left: 20px;
 }

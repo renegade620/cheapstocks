@@ -10,9 +10,7 @@ const Gamingpage = () => {
     <div>
         <Navbar/>
     </div>
-    <div>
-      <h1>CHEAPSTOCKS TECH</h1>
-    </div>
+    
     <div className='products'>
       {""}
          {PRODUCTS.map((product)=>(
