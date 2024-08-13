@@ -1,7 +1,7 @@
-import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Navbar from '../Components/Navbar';
-import KitchenProducts, { PRODUCTS } from './kitchenproducts';
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import KitchenProducts, { PRODUCTS } from "./kitchenproducts";
 
 function Kitchen() {
   return (
@@ -12,16 +12,16 @@ function Kitchen() {
         <div className="kitchen-sections">
           <section className="kitchen-appliances">
             <h2>Appliances</h2>
-            {/* toaster */}
+            {/* fridge */}
             <KitchenProducts />
           </section>
           <section className="kitchen-cabinets">
             <h2>Cabinets</h2>
             {/*microwave */}
-          </section>
+          </section>c
           <section className="kitchen-countertops">
             <h2>Countertops</h2>
-            {/* blender */}
+            {/* cooker */}
           </section>
         </div>
       </div>
