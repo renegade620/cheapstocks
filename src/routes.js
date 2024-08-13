@@ -3,19 +3,16 @@ import React from 'react'
 import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
-<<<<<<< HEAD
 import {Cart} from './Components/Cart';
 import Library from './pages/Library';
 import Kitchen from './pages/Kitchen';
-const routes = [
-=======
-import Cart from './Components/Cart';
+
 
 
 
   const routes = [
    
->>>>>>> quincy-branch
+
     {
         path: "/",
         element: <Home />,
