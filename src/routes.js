@@ -2,9 +2,9 @@ import React from 'react'
 import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
-import Cart from './Components/Cart';
+import {Cart} from './Components/Cart';
+import Library from './pages/Library';
 import Kitchen from './pages/Kitchen';
-
 const routes = [
     {
         path: "/",
@@ -25,7 +25,7 @@ const routes = [
       path:"/kitchen",
       element:<Kitchen/>,
       errorElement:<ErrorPage/>
-    },
+    }
     
   ];
 
