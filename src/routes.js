@@ -3,6 +3,7 @@ import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import Cart from './Components/Cart';
+import Library from './pages/Library';
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
     {
       path:"cart",
       element:<Cart/>,
+      errorElement:<ErrorPage/>
+    },
+    {
+      path:"/Library",
+      element:<Library/>,
       errorElement:<ErrorPage/>
     }
     
