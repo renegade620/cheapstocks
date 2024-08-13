@@ -16,7 +16,8 @@ function Home() {
         <Link className='link' to='/Gaming'><img className='gamingpage' src='images/gaming.jpg' alt=''/></Link>
         <Link className='link' to='/Library'><img className='gamingpage' src='/images/library.png'/></Link>
         
-        
+        <Link className='link' to='/kitchen'><img className='gamingpage' src='/images/kitchen equipments.jpg' alt=''/></Link> 
+
      
         </div>
       </>
