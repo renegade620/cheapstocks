@@ -1,4 +1,4 @@
-/*mport product1 from '../assets/images/product1.jpg';
+/*import product1 from '../assets/images/product1.jpg';
 import product2 from '../assets/images/product2.jpg';
 import product3 from '../assets/images/product3.jpg';
 import product4 from '../assets/images/product4.jpg';
