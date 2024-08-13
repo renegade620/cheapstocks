@@ -12,7 +12,7 @@ const Navbar = () => {
             <a href='#'> Sellers</a>
             <a href='#'>Contact Us</a>
             
-            <Link to="/cart" >Add to Cart<img className='cart' src='/images/local_mall_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png' alt='Add to Cart' /></Link>
+            <Link to="/cart" >Add to Cart<img className='cart' src='/local_mall_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png' alt='Add to Cart' /></Link>
         </nav>
     </header>
   )

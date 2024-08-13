@@ -1,8 +1,9 @@
 import React from 'react'
 
 export const Product = (props) => {
-  const {id,productName,price,productImage} =props.data
+  const {id,productName,Price,productImage}=props.data;
   return (
-    <div className='product'></div>
+    <div>Product</div>
   )
 }
+

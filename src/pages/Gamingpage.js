@@ -7,9 +7,14 @@ const Gamingpage = () => {
   return (
     <>
     <div>
-        
+        <h1>CHEAPSTOCKS TECH</h1>
     </div>
-    <div>I am Quincy</div>
+    <div className='products'>
+      {""}
+         {PRODUCTS.map((product)=>(
+          <Product data={product}/>
+         ))}
+    </div>
     </>
   )
   
