@@ -25,6 +25,11 @@ const routes = [
       path:"/kitchen",
       element:<Kitchen/>,
       errorElement:<ErrorPage/>
+    },
+    {
+      path:"/Library",
+      element:<Library/>,
+      errorElement:<ErrorPage/>
     }
     
   ];
