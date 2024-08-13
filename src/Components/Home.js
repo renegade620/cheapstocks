@@ -13,7 +13,7 @@ function Home() {
        <div className='page links'>
       
        
-        <Link className='link' to='/Gaming'><img className='gamingpage' src='/images/gaming.jpg' alt=''/></Link>
+        <Link className='link' to='/Gaming'><img className='gamingpage' src='/gaming.jpg' alt=''/></Link>
         <Link className='link' to='/Library'><img className='gamingpage' src='/images/library.png'/></Link>
         
         
