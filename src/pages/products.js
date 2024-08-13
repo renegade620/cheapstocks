@@ -26,7 +26,7 @@ import product7 from '../assets/images/product7.jpg';
         },
         {
             id:4,
-            productName:"Xbo",
+            productName:"Xbox",
             Price:60000,
             productImage:product4,
         }, 

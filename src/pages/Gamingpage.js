@@ -2,12 +2,16 @@ import React from 'react'
 import './Gamingpage.css'
 import { PRODUCTS } from './products'
 import { Product } from './Product'
+import Navbar from '../Components/Navbar'
 
 const Gamingpage = () => {
   return (
     <>
     <div>
-        <h1>CHEAPSTOCKS TECH</h1>
+        <Navbar/>
+    </div>
+    <div>
+      <h1>CHEAPSTOCKS TECH</h1>
     </div>
     <div className='products'>
       {""}
