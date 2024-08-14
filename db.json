@@ -1,0 +1,34 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Toothpaste",
+        "price": 2.99,
+        "description": "Minty fresh toothpaste for a bright smile"
+      },
+      {
+        "id": 2,
+        "name": "Shampoo",
+        "price": 4.99,
+        "description": "Nourishing shampoo for all hair types"
+      },
+      {
+        "id": 3,
+        "name": "Soap",
+        "price": 1.99,
+        "description": "Gentle cleansing soap bar"
+      },
+      {
+        "id": 4,
+        "name": "Deodorant",
+        "price": 3.49,
+        "description": "Long-lasting protection against odor"
+      },
+      {
+        "id": 5,
+        "name": "Toilet Paper",
+        "price": 5.99,
+        "description": "Soft and strong toilet paper, pack of 6 rolls"
+      }
+    ]
+  }
