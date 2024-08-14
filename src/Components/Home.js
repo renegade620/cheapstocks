@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import './Home.css'
-import { Cart } from './Cart';
+import Cart from './Cart';
 
 
 //NB insert your page links in the page links div
