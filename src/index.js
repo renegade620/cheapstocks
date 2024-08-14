@@ -5,8 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './Components/Home';
 import routes from './routes'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-import {Provider} from 'react-redux'
-import { store } from './store';
+
 
 <RouterProvider>
   <Home/>
