@@ -1,6 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
+
+import Navbar from './Navbar';
+import Footer from './Footer';
 import './Home.css'
 import { Cart } from './Cart';
 
@@ -21,6 +23,9 @@ function Home() {
         <Link className='link' to='./Foodstuff'><img className='gamingpage' src='./food.jpg' alt=''/></Link>
         
      
+        </div>
+        <div>
+          <Footer/>
         </div>
       </>
       

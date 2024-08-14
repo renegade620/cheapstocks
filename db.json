@@ -1,4 +1,27 @@
 {
+<<<<<<< HEAD
+    "books": [
+      {
+        "id": 1,
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "genre": ["Fantasy", "Adventure"],
+        "price": 3861.21,
+        "description": "A classic epic fantasy...",
+        "image": "./images/lord_of_the_rings.jpeg",
+        "stock": 15,
+        "reviews": [
+          {
+            "user": "John Doe",
+            "rating": 5,
+            "comment": "Amazing book!"
+          }
+        ]
+      }
+    ]
+  }
+  
+=======
     "products": [
       {
         "id": 1,
@@ -32,3 +55,4 @@
       }
     ]
   }
+>>>>>>> 2197ab3609285785ee09199086aa311af70a48f1
