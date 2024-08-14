@@ -1,17 +1,10 @@
 
-import{createSlice} from "@reduxjs/toolkit"
-const initialState ={
-  products:[]
+import React from 'react'
+
+export const Cart = () => {
+  return (
+    <div>Cart</div>
+  )
 }
-const cartSlice = createSlice({
-  name:'cart',
-  initialState,
-  reducers:{
 
- Toiletries
-export default Cart
-  }
-})
-
-export default cartSlice.reducer;
 
