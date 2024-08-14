@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "books": [
       {
         "id": 1,
@@ -19,9 +18,8 @@
         ]
       }
     ]
-  }
+  };
   
-=======
     "products": [
       {
         "id": 1,
@@ -54,5 +52,3 @@
         "description": "Soft and strong toilet paper, pack of 6 rolls"
       }
     ]
-  }
->>>>>>> 2197ab3609285785ee09199086aa311af70a48f1
