@@ -5,9 +5,7 @@ import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import Cart from './Components/Cart';
 import Library from './pages/Library';
-<<<<<<< HEAD
 import FoodStuffpage from './pages/FoodStuffPage';
-=======
 import Kitchen from './pages/Kitchen';
 
 
@@ -15,7 +13,6 @@ import Kitchen from './pages/Kitchen';
 
   const routes = [
    
->>>>>>> main
 
     {
         path: "/",
@@ -47,11 +44,6 @@ import Kitchen from './pages/Kitchen';
       element: <FoodStuffpage />,
       errorElement: <ErrorPage /> 
     }
-<<<<<<< HEAD
-=======
-    
-    
->>>>>>> main
   ];
 export default routes;
 
