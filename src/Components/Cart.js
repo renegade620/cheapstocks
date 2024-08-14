@@ -8,7 +8,10 @@ const cartSlice = createSlice({
   initialState,
   reducers:{
 
+ Toiletries
+export default Cart
   }
 })
 
 export default cartSlice.reducer;
+
