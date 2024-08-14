@@ -1,4 +1,5 @@
 import React from 'react';
+import './kitchen.css'
 
 const products = [
   {
@@ -23,7 +24,7 @@ function KitchenProducts() {
     <div className="products">
       {products.map((product, index) => (
         <div key={index} className="product-card">
-          <img src={product.imageUrl} alt={product.name} className="product-image" />
+          <img  src={product.imageUrl} alt={product.name} className="product-image" />
           <h3 className="product-name">{product.name}</h3>
           <p className="product-price">{product.price}</p>
         </div>
