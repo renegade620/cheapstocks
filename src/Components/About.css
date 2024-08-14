@@ -41,15 +41,3 @@
     color: #555;
     margin-bottom: 0.5rem;
   }
-  
-  .cart {
-    display: block;
-    margin: 20px auto;
-    width: 48px;
-    height: 48px;
-  }
-  
-  .cart:hover {
-    opacity: 0.8;
-  }
-  
