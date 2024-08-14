@@ -8,14 +8,14 @@ const Navbar = ({size}) => {
     <header className='header'>
         <h1 className='h1'>Cheap<span>Stocks</span></h1>
         <nav className='navbar'>
-<<<<<<< HEAD
+
           <Link to="/">
           Home
           </Link>
-            <a href='#'>About</a>
-=======
+            
+
             <Link to='./About'>About</Link>
->>>>>>> main
+
             <a href='#'> Sellers</a>
             <a href='#'>Contact Us</a>
             
