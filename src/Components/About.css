@@ -1,23 +1,54 @@
-.about-page {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .about-content {
-    margin-top: 40px;
-  }
-  
-  .about-content h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .about-content p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
+/* About.css */
+
+.about-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-container h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-container li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.cart {
+  display: block;
+  margin: 20px auto;
+  width: 48px;
+  height: 48px;
+}
+
+.cart:hover {
+  opacity: 0.8;
+}

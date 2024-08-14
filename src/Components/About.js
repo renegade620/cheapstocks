@@ -7,7 +7,7 @@ const About = () => {
     <div className="about-container">
       <h2>About CheapStocks</h2>
       <p>
-        CheapStocks is your go-to platform for affordable stock we are dedicated in providing best deals in wide range of product. 
+        CheapStocks is your go-to platform for affordable stock .we are dedicated in providing best deals in wide range of product. 
         we provide our goods at budget-friendly prices.our company started in 2021 after covid 19 pandemic.
          It help people purchase goods online because of lock down and later grew up in to a bigger platform
       </p>
