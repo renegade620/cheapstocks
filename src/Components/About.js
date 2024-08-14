@@ -1,5 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> 6cd0b81276b83019c228fe10cac5ae4ec3ef38f7
 import "./About.css";
 
 const About = () => {
@@ -22,6 +25,7 @@ const About = () => {
         <li>Wide variety of categories</li>
         <li>Easy-to-use platform</li>
         <li>Regular updates to our collection</li>
+<<<<<<< HEAD
       </ul>
       <Link to="/cart">
         <img 
@@ -30,8 +34,16 @@ const About = () => {
           alt="Add to Cart" 
         />
       </Link>
+=======
+       </ul>
+     
+>>>>>>> 6cd0b81276b83019c228fe10cac5ae4ec3ef38f7
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default About;
+=======
+export default About;
+>>>>>>> 6cd0b81276b83019c228fe10cac5ae4ec3ef38f7

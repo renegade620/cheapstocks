@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 export const Cart = () => {
@@ -6,5 +5,7 @@ export const Cart = () => {
     <div>Cart</div>
   )
 }
+
+
 
 
