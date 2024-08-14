@@ -7,7 +7,7 @@
         "genre": ["Fantasy", "Adventure"],
         "price": 3861.21,
         "description": "A classic epic fantasy...",
-        "image": "lord_of_the_rings.jpg",
+        "image": "./images/lord_of_the_rings.jpeg",
         "stock": 15,
         "reviews": [
           {
