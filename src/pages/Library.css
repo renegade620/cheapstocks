@@ -8,8 +8,8 @@
 
 #hero-container > img {
     max-width: 100%;
-    height: auto;
-    filter: blur(5px);
+    height: fit-content;
+    filter: blur(3px);
 }
 
 #hero-content {

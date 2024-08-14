@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Navbar from "../Components/Navbar";
 import "./Library.css";
+import heroImage from "../assets/images/library-hero.jpg";
 
 function Library() {
   const [books, setBooks] = useState([]);
@@ -20,7 +21,7 @@ function Library() {
         <Navbar />
       </div>
       <div id="hero-container">
-        <img src="/images/library-hero.jpg" alt="bookshelf" />
+        <img src={heroImage} alt="bookshelf" />
         <div id="hero-content">
           <h1>
             Isn't it hard to find <strong>Technological Books</strong>?
