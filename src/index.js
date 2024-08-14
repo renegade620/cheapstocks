@@ -9,7 +9,7 @@ import { createBrowserRouter,RouterProvider } from "react-router-dom";
   <Home/>
 </RouterProvider>*/
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
 
