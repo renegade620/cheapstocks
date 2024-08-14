@@ -7,5 +7,5 @@ export const Cart = () => {
 }
 
 
-export default cartSlice.reducer;
+
 
