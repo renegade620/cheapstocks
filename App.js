@@ -1,38 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
-import { fetchProducts } from './api/productApi';
+import React from 'react';
+import { BrowserRouter as Routes,Route} from 'react-router-dom';
+import Gamingpage from './src/pages/Gamingpage'
+import ErrorPage from './ErrorPage';
+import Home from './src/Components/Home'
+import Cart from './src/Components/Cart'
+import Library from './src/pages/Library';
+import FoodStuffpage from './src/pages/FoodStuffPage';
+
+import Kitchen from './pages/Kitchen';
+
 import './App.css';
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    fetchProducts().then(data => setProducts(data));
-  }, []);
-
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
+  
 
   return (
-    <Router>
-      <div className="App">
-        <header className="App-header">
-          <h1>Cheap Stocks - Toiletries</h1>
-        </header>
-        <Switch>
-          <Route exact path="/">
-            <ProductList products={products} addToCart={addToCart} />
-          </Route>
-          <Route path="/cart">
-            <Cart items={cart} />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <BrowserRouter>
+    <Routes>
+     <Route path='/' element={<Home/>} errorElement={<ErrorPage/>} />
+     <Route path='/Gaming' element={<Gamingpage/>} errorElement={<ErrorPage/>} />
+     <Route path='/cart' element={<Cart/>} errorElement={<ErrorPage/>} />
+     <Route path='/kitchen' element={<Kitchen/>} errorElement={<ErrorPage/>} />
+     <Route path='/Library' element={<Library/>} errorElement={<ErrorPage/>} />
+     <Route path='/FoodStuffPage' element={<FoodStuffpage/>} errorElement={<ErrorPage/>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
