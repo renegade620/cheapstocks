@@ -22,6 +22,8 @@ function Home() {
       
        
         <Link handleClick={handleClick} className='link' to='/Gaming'><img className='gamingpage' src='./gaming.jpg' alt=''/></Link> 
+        <Link className='link' to='/Library'><img className='gamingpage' src='./Pasted image.png'/></Link>
+        <Link  to='/Kitchen'><img className='gamingpage link' src='./kitchen equipments.jpg'/></Link>
         
         
      
