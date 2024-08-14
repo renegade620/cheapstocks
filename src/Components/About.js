@@ -22,14 +22,8 @@ const About = () => {
         <li>Wide variety of categories</li>
         <li>Easy-to-use platform</li>
         <li>Regular updates to our collection</li>
-      </ul>
-      <Link to="/cart">
-        <img 
-          className="cart"
-          src="/local_mall_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
-          alt="Add to Cart" 
-        />
-      </Link>
+       </ul>
+     
     </div>
   );
 };
