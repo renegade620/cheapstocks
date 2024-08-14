@@ -1,5 +1,5 @@
 import React from 'react'
-
+import About from './Components/About';
 import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
@@ -44,7 +44,12 @@ import Kitchen from './pages/Kitchen';
       path: "/FoodStuffpage",
       element: <FoodStuffpage />,
       errorElement: <ErrorPage /> 
-    }
+    },
+    {
+      path: "/About",
+      element: <About />,
+      errorElement: <ErrorPage /> 
+    },
   ];
 export default routes;
 

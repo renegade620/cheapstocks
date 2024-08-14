@@ -1,0 +1,23 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .about-content {
+    margin-top: 40px;
+  }
+  
+  .about-content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
