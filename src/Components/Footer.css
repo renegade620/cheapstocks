@@ -1,0 +1,26 @@
+footer {
+  background-color: #2e8b57;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+strong {
+    color: #f5deb3;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0;
+}
+
+#footer-links span {
+    color: #f5deb3;
+} 
+
+button {
+    background-color:  #2e8b57;
+    padding: 5px 10px;
+}
