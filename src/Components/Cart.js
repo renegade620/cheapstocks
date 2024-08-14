@@ -9,7 +9,7 @@ const cartSlice = createSlice({
   reducers:{
 
  Toiletries
-export default Cart
+
   }
 })
 
