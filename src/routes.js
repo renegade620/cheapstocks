@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
@@ -49,6 +48,3 @@ import Kitchen from './pages/Kitchen';
 export default routes;
 
   
-
-
-
