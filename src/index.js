@@ -6,7 +6,6 @@ import Home from './Components/Home';
 import routes from './routes'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
-
 <RouterProvider>
   <Home/>
 </RouterProvider>

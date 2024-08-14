@@ -1,15 +1,15 @@
 #hero-container {
     display: flex;
     flex-direction: column;
-    height: 540px;
+    height: auto;
     align-items: center;
     justify-content: center;
 }
 
 #hero-container > img {
     max-width: 100%;
-    height: auto;
-    filter: blur(5px);
+    height: fit-content;
+    filter: blur(3px);
 }
 
 #hero-content {
@@ -23,4 +23,10 @@
 #hero-button {
     background-color: #008000;
     color: #ffffff;
+}
+
+#top-sellers {
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
 }
