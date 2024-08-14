@@ -1,9 +1,9 @@
 import React from 'react';
-import './kitchen.css'
+import './kitchen.css';
 
 const products = [
   {
-    name: 'fridge',
+    name: 'Fridge',
     price: '$29.99',
     imageUrl: 'https://tvguru.co.ke/wp-content/uploads/2022/07/Samsung-Side-by-Side-635-Litres-Refrigerator-RS64R5311B4.webp'
   },
@@ -13,9 +13,39 @@ const products = [
     imageUrl: 'https://leonofficefurniture.co.ke/wp-content/uploads/2024/07/WhatsApp-Image-2024-04-19-at-3.34.17-PM-1.jpeg'
   },
   {
-    name: 'cooker',
+    name: 'Cooker',
     price: '$49.99',
     imageUrl: 'https://www.woodreface.com/wp-content/uploads/2021/03/McElroy-AFTER-Peninsula-Countertops-9102-scaled.jpg'
+  },
+  {
+    name: 'Microwave',
+    price: '$39.99',
+    imageUrl: 'https://example.com/microwave.jpg'
+  },
+  {
+    name: 'Wall Cabinets',
+    price: '$59.99',
+    imageUrl: 'https://example.com/wall-cabinets.jpg'
+  },
+  {
+    name: 'Granite Countertop',
+    price: '$79.99',
+    imageUrl: 'https://example.com/granite-countertop.jpg'
+  },
+  {
+    name: 'Stainless Steel Sink',
+    price: '$25.99',
+    imageUrl: 'https://example.com/stainless-steel-sink.jpg'
+  },
+  {
+    name: 'Pendant Lights',
+    price: '$19.99',
+    imageUrl: 'https://example.com/pendant-lights.jpg'
+  },
+  {
+    name: 'Hardwood Flooring',
+    price: '$99.99',
+    imageUrl: 'https://example.com/hardwood-flooring.jpg'
   }
 ];
 
@@ -24,7 +54,7 @@ function KitchenProducts() {
     <div className="products">
       {products.map((product, index) => (
         <div key={index} className="product-card">
-          <img  src={product.imageUrl} alt={product.name} className="product-image" />
+          <img src={product.imageUrl} alt={product.name} className="product-image" />
           <h3 className="product-name">{product.name}</h3>
           <p className="product-price">{product.price}</p>
         </div>
