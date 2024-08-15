@@ -21,7 +21,7 @@ function Home() {
         <Link className='link' to='/Library'><img className='gamingpage' src='./Pasted image.png' alt=''/></Link>
         <Link className='link' to='/Kitchen'><img className='gamingpage' src='./kitchen equipments.jpg'/></Link>
         <Link className='link' to='./Foodstuff'><img className='gamingpage' src='./food.jpg' alt=''/></Link>
-        
+        <Link className='link' to='./Toiletries'><img className='gamingpage' src='./TOIETRIES img.jpg' alt=''/></Link>
      
         </div>
         <div>

@@ -8,6 +8,7 @@ import Library from './pages/Library';
 import FoodStuffpage from './pages/FoodStuffPage';
 
 import Kitchen from './pages/Kitchen';
+import { Toiletries } from './pages/Toiletries';
 
 
 
@@ -48,6 +49,11 @@ import Kitchen from './pages/Kitchen';
     {
       path: "/About",
       element: <About/>,
+      errorElement: <ErrorPage /> 
+    },
+    {
+      path: "/Toiletries",
+      element: <Toiletries />,
       errorElement: <ErrorPage /> 
     }
   ];
