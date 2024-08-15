@@ -1,5 +1,8 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
+import React from "react"
+import Navbar from "../Components/Navbar"
+import { GOODS } from './Goods'
+
+
 import "./FoodStuff.css"
 
 function FoodStuffPage() {
@@ -8,11 +11,12 @@ function FoodStuffPage() {
       <div id="nav">
         <Navbar />
       </div>
-      <div id="food-container">
-        <div id="initial-content">
-        <h1>All Food Stuffs</h1>
-        </div>
-      </div>
+      <div className='products'>
+    {""}
+       {GOODS.map((Good)=>(
+        <Good data={Good} />
+       ))}
+  </div>
     </>
   );
 }
