@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "../Components/Navbar"
 import { GOODS } from './Goods'
-import { Product } from './Product'
+
 import "./FoodStuff.css"
 
 function FoodStuffPage() {
@@ -12,8 +12,8 @@ function FoodStuffPage() {
       </div>
       <div className='products'>
     {""}
-       {GOODS.map((product)=>(
-        <Product data={product} />
+       {GOODS.map((Good)=>(
+        <Good data={Good} />
        ))}
   </div>
     </>
