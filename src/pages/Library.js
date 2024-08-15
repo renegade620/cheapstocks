@@ -1,3 +1,5 @@
+//Library.js
+
 import React, { useEffect, useState } from "react";
 
 import Navbar from "../Components/Navbar";
@@ -12,15 +14,16 @@ function Library() {
   const [searchItem, setSearchItem] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/books")
+    fetch("http://localhost:4000/books") //fetch from json server
       .then((r) => r.json())
       .then((data) => {
         setBooks(data);
 
-        let bestSellerBook = data[0];
+        let bestSellerBook = data[0]; // initialize the best selling book to the first indexed book
         let i = 0;
 
         // for loop to display best selling book
+        // the book with the greatest average rating is displayed
         for (i = 1; i < data.length; i++) {
           const currentAverageRating = calculateAverageRating(data[i]);
           const bestSellerAverageRating =
@@ -39,6 +42,7 @@ function Library() {
       return 0;
     }
 
+    // reduce method to calculate sum
     const sum = book.reviews.reduce(
       (total, review) => total + review.rating,
       0
@@ -66,6 +70,7 @@ function Library() {
           </h1>
           <p>worry not, for we went all out to give you just that!</p>
           <a href="#top-sellers">
+            {/* perharps a smoother scroll? */}
             <button
               id="hero-button"
               onclick="window.location.href='#top-sellers'"
@@ -77,9 +82,9 @@ function Library() {
       </div>
       <div id="top-sellers">
         <h1 id>BEST SELLERS</h1>
-        {isLoading ? (
+        {isLoading ? ( // ternary operation - if false
           <p>Loading...</p>
-        ) : bestSeller ? (
+        ) : bestSeller ? ( // ternary operation - if true
           <div className="best-seller">
             <img
               className="book-image"
@@ -101,9 +106,9 @@ function Library() {
         )}
       </div>
       <div id="other-sellers">
-      <hr/>
+        <hr />
         <h2>ALL BOOKS</h2>
-       
+        {/* adds search filter */}
         <div id="search">
           <input
             type="text"
@@ -111,14 +116,14 @@ function Library() {
             value={searchItem}
             onChange={(event) => setSearchItem(event.target.value)}
           />
-          
         </div>
-        <hr/><br/>
-        {isLoading ? (
+        <hr />
+        <br />
+        {isLoading ? ( // ternary operation - if false
           <p>Loading...</p>
-        ) : filteredBooks.length > 0 ? (
+        ) : filteredBooks.length > 0 ? ( // ternary operation - if true
           <div className="book-list">
-            {filteredBooks.map((book) => (
+            {filteredBooks.map((book) => ( // map method
               <div key={book.id}>
                 <img className="book-image" src={book.image} alt={book.title} />
                 <h3>{book.title}</h3>
@@ -133,7 +138,8 @@ function Library() {
           <p> No books available at the moment</p>
         )}
       </div>
-      <Footer />
+      {/* ensure footer is rendered */}
+      <Footer /> 
     </>
   );
 }
