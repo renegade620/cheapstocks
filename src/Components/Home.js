@@ -14,6 +14,7 @@ function Home() {
   }
   return (
     <>
+   
     <div >
       <Navbar size={cart.length}/>
        </div>

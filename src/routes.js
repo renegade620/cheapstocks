@@ -8,6 +8,7 @@ import FoodStuffPage from './pages/FoodStuffPage'
 import About from './Components/About';
 import Kitchen from './pages/Kitchen';
 import { Toiletries } from './pages/Toiletries';
+import { Login } from './pages/Login';
 
 
 
@@ -53,6 +54,11 @@ import { Toiletries } from './pages/Toiletries';
     {
       path: "/Toiletries",
       element: <Toiletries />,
+      errorElement: <ErrorPage /> 
+    },
+    {
+      path: "/Login",
+      element: <Login />,
       errorElement: <ErrorPage /> 
     }
   ];
