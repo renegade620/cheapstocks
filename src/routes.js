@@ -4,7 +4,7 @@ import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import { Cart } from './Components/Cart';
 import Library from './pages/Library';
-import FoodStuffpage from './pages/FoodStuffPage';
+import FoodStuffPage from './pages/FoodStuffPage'
 import About from './Components/About';
 import Kitchen from './pages/Kitchen';
 import { Toiletries } from './pages/Toiletries';

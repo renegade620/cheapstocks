@@ -1,10 +1,7 @@
 import React,{useState} from 'react'
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-
-import Navbar from './Navbar';
 import Footer from './Footer';
-import { Cart } from './Cart';
 import './Home.css'
 import { Cart } from './Cart';
 
