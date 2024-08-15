@@ -11,8 +11,11 @@ const Navbar = ({size}) => {
           <Link to="/">
           Home
           </Link>
-          <Link to='./About'>About</Link>
-            <a href='#'> Sellers</a>
+            
+
+            <Link to='./About'>About</Link>
+
+            <Link to='./Login'>Login</Link>
             <a href='#'>Contact Us</a>
             
             <Link to="/cart" ><img className="cart "

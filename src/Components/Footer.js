@@ -5,7 +5,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer" >
       <p id="footer-links">All your needs under one roof:<br /><span><Link to="/">Home</Link> | <Link to="/Gaming">Games</Link>| <Link to="/Library">Books</Link> | <Link to="/Kitchen">Kitchen</Link> | <Link to="/Food">Food</Link> | <Link to="/">Toileteries</Link></span></p>
       <p>
         <br/>&copy; {new Date().getFullYear()}  <strong>CheapStocks</strong>. All

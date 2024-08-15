@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
+import Navbar from "./Navbar";
 
 const About = () => {
   return (
+    <>
+    <div>
+      <Navbar/>
+    </div>
     <div className="about-container">
       <h2>About CheapStocks</h2>
       <p>
@@ -22,10 +27,10 @@ const About = () => {
         <li>Wide variety of categories</li>
         <li>Easy-to-use platform</li>
         <li>Regular updates to our collection</li>
-      </ul>
+       </ul>
      
-       
-</div>
+    </div>
+    </>
   );
 };
 

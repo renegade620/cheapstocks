@@ -14,6 +14,7 @@ const Gamingpage = () => {
         <Navbar size={Cart.length}/>
     </div>
     
+    
     <div className='products'>
       {""}
          {PRODUCTS.map((product)=>(
