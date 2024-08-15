@@ -7,17 +7,17 @@
 }
 .product{
     border: 1px solid #ddd;
-    padding: 16px;
+    padding: 5px;
     margin: 8px;
     border-radius: 4px;
     width: 40%;
     height: 40%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: block;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     transition: 0.6s;
+    margin-left: 130px;
 }
 .product:hover{
     width: 42%;
@@ -28,7 +28,7 @@
     background-color: rgb(26, 100, 26);
     color: #fff;
     font-weight: 800;
-    width: 5%;
+    width: 21%;
     border-radius: 50px;
     height: 26px;
 }
