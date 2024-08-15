@@ -5,6 +5,7 @@
 .description{
     width: 99%;
     height: 45%;
+    background-color: var(--body_background);
     
     
     
@@ -24,7 +25,7 @@
     z-index: 1;
 }
 .link{
-    color: black;
+    color: var(--link_color);
     margin-top: 50px;
     
 }
@@ -33,4 +34,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    background-color: var(--body_background);
 }
