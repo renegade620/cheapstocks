@@ -1,32 +1,72 @@
 #hero-container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero-container > img {
-    max-width: 100%;
-    height: fit-content;
-    filter: blur(3px);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(3px);
 }
 
 #hero-content {
-    text-align: center;
-    position: absolute;
-    top: 350px;
-    left: 27%;
-    color: #f0f8f0;
+  text-align: center;
+  position: absolute;
+  top: 350px;
+  left: 27%;
+  color: #f0f8f0;
 }
 
-#hero-button {
-    background-color: #008000;
-    color: #ffffff;
+button {
+  background-color: #008000;
+  color: #ffffff;
 }
 
 #top-sellers {
-    text-align: center;
-    justify-content: center;
-    padding-top: 50px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.book-image {
+  height: 200px;
+  max-width: 100%;
+}
+
+#other-sellers {
+  margin: 20px auto;
+  width: 80%;
+}
+
+#other-sellers h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.book-list div {
+  width: 20%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-list h3,
+.book-list p {
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bolder;
 }
