@@ -13,39 +13,39 @@ const products = [
     imageUrl: 'https://leonofficefurniture.co.ke/wp-content/uploads/2024/07/WhatsApp-Image-2024-04-19-at-3.34.17-PM-1.jpeg'
   },
   {
-    name: 'Cooker',
+    name: 'Counter tops',
     price: '$49.99',
     imageUrl: 'https://www.woodreface.com/wp-content/uploads/2021/03/McElroy-AFTER-Peninsula-Countertops-9102-scaled.jpg'
   },
   {
     name: 'Microwave',
     price: '$39.99',
-    imageUrl: 'https://example.com/microwave.jpg'
+    imageUrl: 'https://www.questappliances.com/wp-content/uploads/2022/05/rm458-_am720c3d.jpg'
   },
   {
     name: 'Wall Cabinets',
     price: '$59.99',
-    imageUrl: 'https://example.com/wall-cabinets.jpg'
+    imageUrl: 'https://www.tacc.co.ke/wp-content/uploads/2023/10/PDINCBT32_GlossyWhiteGold_1.jpg'
   },
   {
-    name: 'Granite Countertop',
+    name: 'https://m.media-amazon.com/images/I/81kSculx6vL._AC_SL1500_.jpg',
     price: '$79.99',
     imageUrl: 'https://example.com/granite-countertop.jpg'
   },
   {
     name: 'Stainless Steel Sink',
     price: '$25.99',
-    imageUrl: 'https://example.com/stainless-steel-sink.jpg'
+    imageUrl: 'https://m.media-amazon.com/images/I/71pDoLyahPL._AC_SL1500_.jpg'
   },
   {
     name: 'Pendant Lights',
     price: '$19.99',
-    imageUrl: 'https://example.com/pendant-lights.jpg'
+    imageUrl: 'https://m.media-amazon.com/images/I/71-obpNM5zL._AC_UL320_.jpg'
   },
   {
     name: 'Hardwood Flooring',
     price: '$99.99',
-    imageUrl: 'https://example.com/hardwood-flooring.jpg'
+    imageUrl: 'https://m.media-amazon.com/images/I/91wJjjd7ynL.__AC_SX300_SY300_QL70_FMwebp_.jpg'
   }
 ];
 
