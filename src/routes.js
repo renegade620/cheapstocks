@@ -1,11 +1,11 @@
 import React from 'react'
+import About from './Components/About';
 import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import { Cart } from './Components/Cart';
-import Library from './pages/Library';
-import FoodStuffPage from './pages/FoodStuffPage'
-import About from './Components/About';
+import Library from './pages/Library'
+import FoodStuffPage from './pages/FoodStuffPage';
 import Kitchen from './pages/Kitchen';
 import { Toiletries } from './pages/Toiletries';
 import { Login } from './pages/Login';
@@ -48,7 +48,7 @@ import { Login } from './pages/Login';
     },
     {
       path: "/About",
-      element: <About />,
+      element: <About/>,
       errorElement: <ErrorPage /> 
     },
     {
