@@ -1,32 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Login.css'
+import Navbar from '../Components/Navbar'
 
 export const Login = () => {
+
+  const[action,setAction] = useState('Login');
   return (
     <>
+    <div>
+      <Navbar/>
+    </div>
     
     <div className='container'>
-     <div className='header'>
-      <div className='text'>Sign Up</div>
+      <div className='text'>{action}</div>
       <div className='underline'></div>
-</div>
      <div className='inputs'>
+      {action==="Login"?<div></div>:
       <div className='input'>
         <img className='img' src='/person.png' alt=''/>
-        <input type='name' />
-      </div>
+        <input placeholder='Name' type='name' />
+      </div>}
       <div className='input'>
         <img className='img' src='mail.png'alt=''/>
-        <input  type='email' />
+        <input placeholder='Email' type='email' />
       </div>
       <div className='input'>
         <img className='img' src='lock.png' alt=''/>
-        <input type='Password' />
+        <input placeholder='Password' type='Password' />
       </div>
      </div>
-     <div className='forgot-password'>Forgot Password?<span>Click here</span></div>
-     <div className='submit-container'> Sign Up</div>
-     <div className='submit-container'>Login</div>
+     {action==="Sign Up"?<div></div>: <div className='forgot-password'>Forgot Password?<span>Click here</span></div>}
+    
+     <div className='submit-container'>
+     <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}} > Sign Up</div>
+     <div className={action==="Sign Up"?"submit gray":"submit"}onClick={()=>{setAction("Login")}}  >Login</div>
+     </div>
     </div>
 
     </>
