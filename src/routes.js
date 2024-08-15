@@ -4,13 +4,8 @@ import Gamingpage from './pages/Gamingpage';
 import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import { Cart } from './Components/Cart';
-import Library from './pages/Library';
-<<<<<<<<< Temporary merge branch 1
+import Library from './pages/Library'
 import FoodStuffPage from './pages/FoodStuffPage';
-
-=========
-import FoodStuffPage from './pages/FoodStuffPage'
->>>>>>>>> Temporary merge branch 2
 import Kitchen from './pages/Kitchen';
 import { Toiletries } from './pages/Toiletries';
 import { Login } from './pages/Login';

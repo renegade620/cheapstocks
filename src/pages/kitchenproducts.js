@@ -28,11 +28,6 @@ const products = [
     imageUrl: 'https://www.tacc.co.ke/wp-content/uploads/2023/10/PDINCBT32_GlossyWhiteGold_1.jpg'
   },
   {
-    name: 'https://m.media-amazon.com/images/I/81kSculx6vL._AC_SL1500_.jpg',
-    price: '$79.99',
-    imageUrl: 'https://example.com/granite-countertop.jpg'
-  },
-  {
     name: 'Stainless Steel Sink',
     price: '$25.99',
     imageUrl: 'https://m.media-amazon.com/images/I/71pDoLyahPL._AC_SL1500_.jpg'
