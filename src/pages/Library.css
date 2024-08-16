@@ -1,3 +1,11 @@
+/* GENERAL STYLING - START */
+button {
+  background-color: #008000;
+  color: #ffffff;
+}
+/* GENERAL STYLING - END */
+
+/* STYLING FOR HERO SECTION -START */
 #hero-container {
   display: flex;
   flex-direction: column;
@@ -20,11 +28,7 @@
   left: 27%;
   color: #f0f8f0;
 }
-
-button {
-  background-color: #008000;
-  color: #ffffff;
-}
+/* STYLING FOR HERO SECTION -END */
 
 #top-sellers {
   text-align: center;
@@ -69,4 +73,17 @@ button {
 
 .price {
   font-weight: bolder;
+}
+
+#search {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#search input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

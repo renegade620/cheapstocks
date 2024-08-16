@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# CheapStocks, an E-Commerce Webstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for the <strong>Cheap Stocks</strong> e-commerce website. The platform aims to address the challenges customers face in accessing certain goods due to availability and affordability issues.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Project Description](#project-description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup/Installation](#setup--installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support & Contact](#support--contact)
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cheap Stocks is an e-commerce platform dedicated to providing customers with easy access to a wide range of products at affordable prices. Our mission is to bridge the gap between product availability and affordability, ensuring that customers can find and purchase the goods they need without breaking the bank.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- User-friendly product catalog with detailed descriptions and images
+- Search and filtering options
+- User accounts for personalized shopping experiences
+- Shopping cart 
+- Customer reviews and ratings
+- Responsive design for seamless mobile shopping
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React.js** for rendering
+- **CSS**: for styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup & Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy of the project up and running, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/renegade620/cheapstocks.git
+   ```
 
-### `npm run eject`
+2. **Navigate to the project directory:**
+   ```
+   cd cheapstocks
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install the dependencies:**
+   ```
+   npm install or npm i
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Start the development server:**
+   ```
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application should now be running on `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+**To run the project in development mode:**
+```
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**To build the project for production:**
+```
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**To start the production server:**
+```
+npm start
+```
 
-### Code Splitting
+**To run json server:**
+```
+npm run server
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+```
+cheapstocks/
+├── components/           # Reusable UI components
+├── pages/                # React.js pages and API routes
+├── public/               # Static assets (images, fonts, etc.)
+├── styles/               # Global and component-specific styles
+├── utils/                # Utility functions and helpers
+├── hooks/                # Custom React hooks
+├── types/                # TypeScript types and interfaces
+├── models/               # Database models
+├── config/               # Configuration files
+├── .eslintrc.json        # ESLint configuration
+├── .gitignore            # Git ignore file
+├── next.config.js        # Next.js configuration
+├── package.json          # NPM package configuration
+├── README.md             # Project README file
+├── tailwind.config.js    # Tailwind configuration file
+├── tsconfig.json         # TypeScript configuration
+└── package-lock.json     # NPM package lock file
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please create an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To contribute:
 
-### Advanced Configuration
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes and commit them (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the Apache License. See the [LICENSE](/LICENSE) file for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Support & Contact
 
-### `npm run build` fails to minify
+For any inquiries or questions, please contact the cheap stocks team at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: support@cheapstocks.com
+Website: [www.cheapstocks.com](https://www.cheapstocks.com)
