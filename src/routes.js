@@ -5,7 +5,7 @@ import ErrorPage from './ErrorPage';
 import Home from './Components/Home';
 import { Cart } from './Components/Cart';
 import Library from './pages/Library'
-import FoodStuffPage from './pages/FoodStuffPage';
+import { FoodStuffPage } from './pages/FoodStuffPage';
 import Kitchen from './pages/Kitchen';
 import { Toiletries } from './pages/Toiletries';
 import { Login } from './pages/Login';

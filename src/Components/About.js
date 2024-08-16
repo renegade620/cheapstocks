@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import "./About.css";
 import Navbar from "./Navbar";
 
+
 const About = () => {
   return (
     <>
     <div>
       <Navbar/>
+      
     </div>
     <div className="about-container">
       <h2>About CheapStocks</h2>

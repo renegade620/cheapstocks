@@ -3,11 +3,13 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import KitchenProducts, { PRODUCTS } from "./kitchenproducts";
 import './kitchen.css'
-
+import DarkMode from "../Components/DarkMode";
 function Kitchen() {
   return (
+    <>
+    <Navbar />
+      <DarkMode/>
     <div className="kitchen">
-      <Navbar />
       <div className="kitchen-content">
         <h1>Welcome to Our Kitchen</h1>
         <div className="kitchen-sections">
@@ -39,6 +41,7 @@ function Kitchen() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

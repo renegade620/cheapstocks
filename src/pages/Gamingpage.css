@@ -2,5 +2,6 @@
     margin-top: 70px;
     width: 450px;
     height: 350px;
+    background-color: var(--body_background);
     
 }

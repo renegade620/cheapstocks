@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './Home.css'
 import { Cart } from './Cart';
+import DarkMode from './DarkMode'
 
 //NB insert your page links in the page links div
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
    <div className='body'>
     <div >
       <Navbar size={cart.length}/>
+      <DarkMode/>
        </div>
        <div>
         <img   className='description'src='/description.jpg' alt=''/>
