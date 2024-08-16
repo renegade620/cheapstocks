@@ -8,7 +8,6 @@ const Navbar = ({size}) => {
     <header className='header'>
         <h1 className='h1'>Cheap<span>Stocks</span></h1>
         <nav className='navbar'>
-
           <Link to="/">
           Home
           </Link>
@@ -16,7 +15,7 @@ const Navbar = ({size}) => {
 
             <Link to='./About'>About</Link>
 
-            <a href='#'> Sellers</a>
+            <Link to='./Login'>Login</Link>
             <a href='#'>Contact Us</a>
             
             <Link to="/cart" ><img className="cart "

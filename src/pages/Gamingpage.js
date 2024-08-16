@@ -4,6 +4,7 @@ import { PRODUCTS } from './products'
 import { Product } from './Product'
 import Navbar from '../Components/Navbar'
 import { Cart } from '../Components/Cart'
+import DarkMode from '../Components/DarkMode'
 
 const Gamingpage = () => {
 
@@ -12,7 +13,9 @@ const Gamingpage = () => {
     <>
     <div>
         <Navbar size={Cart.length}/>
+        <DarkMode/>
     </div>
+    
     
     <div className='products'>
       {""}
