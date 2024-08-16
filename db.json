@@ -48,6 +48,12 @@
       "name": "Toilet Paper",
       "price": 5.99,
       "description": "Soft and strong toilet paper, pack of 6 rolls"
+    },
+    {
+      "id": 6,
+      "name": "Toiletry bag",
+      "price": 12.99,
+      "description": "Keeps your toiletries organized"
     }
   ]
 }
