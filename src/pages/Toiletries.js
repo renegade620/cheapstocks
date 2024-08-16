@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import './Toiletries.css'
+import DarkMode from '../Components/DarkMode'
 
 
 export const Toiletries = () => {
@@ -8,6 +9,7 @@ export const Toiletries = () => {
      <>
     <div>
       <Navbar/>
+      <DarkMode/>
     </div>
     
    <body className='showcart'>

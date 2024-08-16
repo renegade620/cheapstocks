@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import './Toiletries.css'
+import DarkMode from '../Components/DarkMode'
 
 export const FoodStuffPage = () => {
   return (
     <>
     <div>
       <Navbar/>
+      <DarkMode/>
     </div>
     
    <body className='showcart'>

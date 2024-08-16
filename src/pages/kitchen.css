@@ -1,3 +1,6 @@
+.kitchen{
+    background-color: var(--body_background);
+}
 .product-image{
     height: 40%;
     width: 20%;
