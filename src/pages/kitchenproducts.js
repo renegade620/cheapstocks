@@ -5,7 +5,8 @@ const products = [
   {
     name: 'Fridge',
     price: '$29.99',
-    imageUrl: 'https://tvguru.co.ke/wp-content/uploads/2022/07/Samsung-Side-by-Side-635-Litres-Refrigerator-RS64R5311B4.webp'
+    imageUrl: 'https://tvguru.co.ke/wp-content/uploads/2022/07/Samsung-Side-by-Side-635-Litres-Refrigerator-RS64R5311B4.webp',
+    
   },
   {
     name: 'Drawer Filing Cabinet',
@@ -52,6 +53,7 @@ function KitchenProducts() {
           <img src={product.imageUrl} alt={product.name} className="product-image" />
           <h3 className="product-name">{product.name}</h3>
           <p className="product-price">{product.price}</p>
+          <button>Add to cart</button>
         </div>
       ))}
     </div>
