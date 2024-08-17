@@ -23,7 +23,7 @@ function Home() {
        <div>
         <img   className='description'src='/description.jpg' alt=''/>
        </div>
-       <div className='page links'>
+       <div className='page-links'>
       
        
        <Link className='link' to='/Gaming'><img className='gamingpage' src='/gaming.jpg' alt=''/></Link>
