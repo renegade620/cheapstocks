@@ -1,34 +1,44 @@
 .page{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    grid-template-columns: repeat(2,1fr);
     
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     
+
 }
 .product{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
     border: 1px solid #ddd;
     padding: 5px;
     margin: 8px;
     border-radius: 4px;
     width: 40%;
-    height: 40%;
+    height: 32%;
     display: block;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     transition: 0.6s;
     margin-left: 130px;
+    
+   
 }
-.product:hover{
-    width: 42%;
-    height: 42%;
+.product .page img{
+    width: 60%;
+    filter:drop-shadow(0 5px 2px #0009);
+    margin-top: 150px;
 }
+
 .Add{
     border: none;
     background-color: rgb(26, 100, 26);
     color: #fff;
     font-weight: 800;
-    width: 21%;
+    width: 14%;
     border-radius: 50px;
     height: 26px;
 }

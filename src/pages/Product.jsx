@@ -7,18 +7,15 @@ export const Product = (props) => {
 const {id,productName,Price,productImage}=props.data
   return (
      <>
-      
+       <div className='product'>
      <div className='page'>
-    <div className='product'>
-      <img src={productImage}/>
-    </div>
-    <div className='description'>
+      <img className='item-img' src={productImage}/>
     <p><b>{productName}</b></p>
     <p>${Price}</p>
     <Link to='./cart'><button  className='Add'>Add to Cart</button></Link>
     </div>
-    </div>
+   </div>
+    <div className='description'> </div>
     </>
   )
 }
-
