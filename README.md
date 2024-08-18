@@ -20,9 +20,8 @@ Cheap Stocks is an e-commerce platform dedicated to providing customers with eas
 
 ## Features
 
-- User-friendly product catalog with detailed descriptions and images
+- User-friendly product catalogue with descriptions and images
 - Search and filtering options
-- User accounts for personalized shopping experiences
 - Shopping cart 
 - Customer reviews and ratings
 - Responsive design for seamless mobile shopping
@@ -31,6 +30,8 @@ Cheap Stocks is an e-commerce platform dedicated to providing customers with eas
 
 - **React.js** for rendering
 - **CSS**: for styling
+- **JSX**
+- **json**: for mock api
 
 ## Setup & Installation
 
@@ -88,18 +89,12 @@ cheapstocks/
 ├── pages/                # React.js pages and API routes
 ├── public/               # Static assets (images, fonts, etc.)
 ├── styles/               # Global and component-specific styles
-├── utils/                # Utility functions and helpers
 ├── hooks/                # Custom React hooks
-├── types/                # TypeScript types and interfaces
-├── models/               # Database models
+├── routes/               # routes
 ├── config/               # Configuration files
-├── .eslintrc.json        # ESLint configuration
 ├── .gitignore            # Git ignore file
-├── next.config.js        # Next.js configuration
 ├── package.json          # NPM package configuration
 ├── README.md             # Project README file
-├── tailwind.config.js    # Tailwind configuration file
-├── tsconfig.json         # TypeScript configuration
 └── package-lock.json     # NPM package lock file
 ```
 
@@ -123,5 +118,5 @@ This project is licensed under the Apache License. See the [LICENSE](/LICENSE) f
 
 For any inquiries or questions, please contact the cheap stocks team at:
 
-Email: support@cheapstocks.com
-Website: [www.cheapstocks.com](https://www.cheapstocks.com)
+Email: franklinegift@gmail.com
+Website: [cheapstocks.vercel.app](cheapstocks.vercel.app)
