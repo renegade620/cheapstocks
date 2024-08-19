@@ -118,5 +118,5 @@ This project is licensed under the Apache License. See the [LICENSE](/LICENSE) f
 
 For any inquiries or questions, please contact the cheap stocks team at:
 
-Email: franklinegift@gmail.com, maatifelix001@gmail.com, mwangiquincy77@gmail.com
+Email: franklinegift@gmail.com, maatifelix001@gmail.com, mwangiquincy77@gmail.com, jonathanmutinda16@gmail.com
 Website: [cheapstocks.vercel.app](cheapstocks.vercel.app)
