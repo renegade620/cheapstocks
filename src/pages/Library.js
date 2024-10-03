@@ -14,7 +14,7 @@ function Library() {
   const [searchItem, setSearchItem] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/books") //fetch from json server
+    fetch("https://literate-umbrella-eight.vercel.app/books") //fetch from json server
       .then((r) => r.json())
       .then((data) => {
         setBooks(data);
