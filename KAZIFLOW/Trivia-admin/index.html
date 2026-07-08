@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Jijenge admin</title>
+<style>
+  body { font-family: -apple-system, sans-serif; background: #0b1220; color: #fff; max-width: 640px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 20px; }
+  h2 { font-size: 15px; color: #9aa5b1; margin-top: 32px; }
+  input, select, textarea { width: 100%; box-sizing: border-box; background: #111c2e; border: 1px solid #2a3648; color: #fff; padding: 10px; border-radius: 8px; margin-bottom: 10px; font-size: 14px; }
+  button { background: #3378d8; color: #fff; border: none; padding: 10px 16px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+  button.danger { background: #a32d2d; }
+  button.secondary { background: #233046; }
+  .card { background: #111c2e; border: 1px solid #233046; border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+  .row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .badge { font-size: 11px; padding: 3px 8px; border-radius: 20px; }
+  .badge.booking_open { background: #123a2b; color: #4bb98a; }
+  .badge.live { background: #3a1414; color: #e2534d; }
+  .badge.ended { background: #1b2a42; color: #9aa5b1; }
+  small { color: #6b7688; }
+</style>
+</head>
+<body>
+
+<h1>Jijenge admin</h1>
+<small>Local use only — never deploy this page publicly, it holds your service role key.</small>
+
+<h2>Connection</h2>
+<input id="supabaseUrl" placeholder="https://your-project.supabase.co" />
+<input id="serviceKey" placeholder="Service role key" type="password" />
+<button onclick="saveConnection()">Connect</button>
+
+<h2>Create a round</h2>
+<input id="title" placeholder="Title, e.g. Bible Trivia" />
+<select id="cardType">
+  <option value="free">Free (rewarded ad)</option>
+  <option value="paid">Paid</option>
+</select>
+<input id="entryFee" placeholder="Entry fee (Ksh, 0 if free)" type="number" value="0" />
+<input id="prizeAmount" placeholder="Prize amount (KES)" type="number" />
+<input id="winnerCount" placeholder="Number of winners" type="number" value="1" min="1" />
+<textarea id="question" placeholder="Question"></textarea>
+<input id="correctAnswer" placeholder="Correct answer" />
+<button onclick="createSession()">Create round</button>
+
+<h2>Rounds</h2>
+<button class="secondary" onclick="loadSessions()">Refresh</button>
+<div id="sessionsList"></div>
+
+<script type="module">
+  import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+  let supabase = null;
+
+  window.saveConnection = function () {
+    const url = document.getElementById("supabaseUrl").value.trim();
+    const key = document.getElementById("serviceKey").value.trim();
+    if (!url || !key) return alert("Enter both the Supabase URL and service role key");
+    localStorage.setItem("jijenge_url", url);
+    localStorage.setItem("jijenge_key", key);
+    supabase = createClient(url, key);
+    loadSessions();
+  };
+
+  window.createSession = async function () {
+    if (!supabase) return alert("Connect first");
+    const payload = {
+      title: document.getElementById("title").value,
+      card_type: document.getElementById("cardType").value,
+      entry_fee: Number(document.getElementById("entryFee").value) || 0,
+      prize_amount: Number(document.getElementById("prizeAmount").value) || 0,
+      winner_count: Number(document.getElementById("winnerCount").value) || 1,
+      question: document.getElementById("question").value,
+      correct_answer: document.getElementById("correctAnswer").value,
+      status: "booking_open",
+    };
+    if (!payload.title || !payload.question || !payload.correct_answer) {
+      return alert("Title, question, and correct answer are required");
+    }
+    const { error } = await supabase.from("sessions").insert(payload);
+    if (error) return alert(error.message);
+    document.getElementById("title").value = "";
+    document.getElementById("question").value = "";
+    document.getElementById("correctAnswer").value = "";
+    loadSessions();
+  };
+
+  window.startSession = async function (id) {
+    if (!supabase) return;
+    if (!confirm("Go live now? Booking will close immediately.")) return;
+    const { error } = await supabase.rpc("start_session", { p_session_id: id });
+    if (error) return alert(error.message);
+    loadSessions();
+  };
+
+  window.loadSessions = async function () {
+    if (!supabase) return;
+    const { data, error } = await supabase
+      .from("sessions")
+      .select("id, title, card_type, status, prize_amount, winner_count, correct_answer")
+      .order("created_at", { ascending: false })
+      .limit(20);
+    if (error) return alert(error.message);
+
+    const list = document.getElementById("sessionsList");
+    list.innerHTML = data.map((s) => `
+      <div class="card">
+        <div class="row">
+          <strong>${s.title}</strong>
+          <span class="badge ${s.status}">${s.status}</span>
+        </div>
+        <small>${s.card_type} · ${s.prize_amount} KES · ${s.winner_count} winner(s) · answer: ${s.correct_answer}</small><br/>
+        ${s.status === "booking_open" ? `<button onclick="startSession('${s.id}')">Start round</button>` : ""}
+      </div>
+    `).join("");
+  };
+
+  // Auto-reconnect from saved credentials
+  const savedUrl = localStorage.getItem("jijenge_url");
+  const savedKey = localStorage.getItem("jijenge_key");
+  if (savedUrl && savedKey) {
+    document.getElementById("supabaseUrl").value = savedUrl;
+    document.getElementById("serviceKey").value = savedKey;
+    supabase = createClient(savedUrl, savedKey);
+    loadSessions();
+  }
+</script>
+</body>
+</html>
